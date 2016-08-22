@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nirajmarkandey.popularmovies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.example.nirajmarkandey.popularmovies.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PopularMovieGrid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MovieDetails"
+            android:parentActivityName=".PopularMovieGrid"/>
+
+        <activity android:name=".SettingsActivity"
+            android:parentActivityName=".PopularMovieGrid">
+        <intent-filter>
+            <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

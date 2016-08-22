@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="preferences">User Preference</string>
+    <string name="movie_peference">Movie Preference</string>
+    <string name="dialog">Preferred Movies</string>
+    <string name="default_movie_pref">top_rated</string>
+</resources>
